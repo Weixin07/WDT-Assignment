@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECO Green</title>
+		<style>   
+        body{  
+    margin-top: 100px;  
+    margin-bottom: 100px;  
+    margin-right: 150px;  
+    margin-left: 80px;  
+    background-color: azure ;  
+    color: palevioletred;  
+    font-family: verdana;  
+    font-size: 100%  
+      
+        }  
+            h1 {  
+    color: indigo;  
+    font-family: verdana;  
+    font-size: 100%;  
+}  
+         h2 {  
+    color: green;  
+    font-family: verdana;  
+    font-size: 300%;  
+}</style>  
+    </head>
+
+    <body>
+        <h2><b>ECO GREEN</b></h2><p align = "left">
+        <a href="companybackground.html">Company Background</a> |
+        <a href="pickuprequest.html">Request Pickup</a> |
+        <a href="contacts.html">Contacts</a></p>
+		<br><br>
+        <form method='post' action='PickupRequest.php'>
+            <table>
+                <tr><td>Name</td><td>: <input type='text' name='name' required='required'/></td></tr>
+                <tr><td>Address</td><td>: <textarea name='address' required='required'></textarea></td></tr>
+                <tr><td>Contact Number</td><td>: <input type='tel' name='contact_number' required='required'/></td></tr>
+                <tr><td>E-mail</td><td>: <input type='email' name='email_address' required='required'/></td></tr>
+                <tr><td>Paper</td><td>:
+                        <select name='paper' required='required'>
+                        <option value='1'>Yes</option>
+                        <option value='0'>No</option>
+                </select></td></tr>
+                <tr><td>Plastic</td><td>:
+                        <select name='plastic' required='required'>
+                        <option value='1'>Yes</option>
+                        <option value='0'>No</option>
+                 </select></td></tr>
+                <tr><td>Metal</td><td>:
+                        <select name='metal' required='required'>
+                        <option value='1'>Yes</option>
+                        <option value='0'>No</option>
+                </select></td></tr>
+                <tr><td>Cardboard Box</td><td>:
+                         <select name='cardboard_box' required='required'>
+                         <option value='1'>Yes</option>
+                         <option value='0'>No</option>
+                </select></td></tr>
+                <tr><td>Others</td><td>:
+                        <select name='othersyn' required='required'>
+                        <option value='1'>Yes</option>
+                        <option value='0'>No</option>
+                </select></td></tr>
+                <tr><td>If Others</td><td>: <input type='text' name='others'/></td></tr>
+                <tr><td>Preferable Date</td><td>: <input type='date' name='preferable_date' required='required'/></td></tr>
+                <tr><td>Preferable Time</td><td>:
+                    <select name='preferable_time' required='required'>
+                        <option value='1st Session'>9am ~ 12pm</option>
+                        <option value='2nd Session'>1pm ~ 5pm</option>
+                    </select></td></tr>
+                <tr><td></td><td><input type='Submit' value='Submit'/>
+            </table>
+            
+        </form>
+    </body>
+</html>
